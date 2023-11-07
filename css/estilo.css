@@ -1,0 +1,250 @@
+.priLogo { 
+    width: 140px;
+}
+
+.encabezado {
+    border-top: 30px solid #87ceeb;
+    background-color: #fafafa;
+}
+
+.fuentesNav {
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-left: 15px;
+}
+
+.banner {
+    background-image: url("../img/pileta\ natacion.png");
+    height: calc(100vh - 100px);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Ajusta el valor alpha (0.5) para controlar la opacidad */
+    z-index: 0;
+}
+
+.bannerContenido {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.bannerContenido h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FAFAFA;
+    margin-bottom: 10px;
+}
+
+.bannerContenido p {
+    color: #FAFAFA;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer {
+    background-color: gray;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footerContenido {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer i {
+    margin-right: 10px;
+}
+
+.accesorios {
+    text-align: center;
+    margin: 10vh;
+    border-bottom: 1px solid black;
+}
+
+.accesorios h3 {
+    color: cadetblue;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.accesorios p {
+    font-size: 3rem;
+    color: black;
+    padding: 10px;
+}
+
+.contenedorAccesorios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 10px; 
+}
+
+.tarjeta img {
+    max-width: 100%;
+
+}
+
+.tarjeta p {
+    margin: 10px 0;
+}
+
+.tarjeta button {
+    background-color: cadetblue;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.tarjeta button:hover {
+    background-color: cadetblue;
+}
+
+.nosotros {
+    text-align: center;
+    margin: 10vh;
+    border-bottom: 1px solid black;
+    text-transform: uppercase;
+}
+
+.nosotros h3 {
+    color: cadetblue;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+.pagNosotros {
+    color: cadetblue;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+    padding: 10px;
+}
+
+input[type="text"],
+textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.btnFormulario{
+    background-color: gray;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.pagContacto {
+    color: cadetblue;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.pagForm {
+    color: black;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.pagMap {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+iframe{
+    display: block;
+    margin: auto;
+}
+
+@media (max-width: 1023px) {
+    .encabezado {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bannerContenido p {
+        font-size: 2.5rem;
+    }
+
+    .accesorios {
+        font-size: 2rem;
+        margin: 5vh;
+    }
+
+    .accesorios h3,
+    .accesorios p {
+        font-size: inherit;
+    }
+
+    .contenedorAccesorios {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footerContenido {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px){
+.contenedorAccesorios {
+    grid-template-columns: 1fr;
+}
+}
