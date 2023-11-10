@@ -1,0 +1,40 @@
+@media (max-width: 1023px) {
+    .encabezado {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bannerContenido p {
+        font-size: 2.5rem;
+    }
+
+    .accesorios {
+        font-size: 2rem;
+        margin: 5vh;
+    }
+
+    .accesorios h3,
+    .accesorios p {
+        font-size: inherit;
+    }
+
+    .contenedorAccesorios {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footerContenido {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedorAccesorios {
+        grid-template-columns: 1fr;
+    }
+
+    .formContacto {
+        width: 95vw;
+    }
+}
