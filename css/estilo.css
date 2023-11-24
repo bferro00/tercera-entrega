@@ -281,3 +281,9 @@ iframe {
 }
 
 /*# sourceMappingURL=estilo.css.map */
+.mision {
+  text-align: center;
+  margin: 5vh;
+  border-bottom: 1px solid black;
+  text-transform: uppercase;
+}
